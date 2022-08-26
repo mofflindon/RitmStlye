@@ -1,0 +1,592 @@
+@import url(https://fonts.googleapis.com/css?family=El+Messiri:regular,500,600,700);
+@font-face {
+    font-family: 'Proxima Nova';
+    src: local('Proxima Nova Regular'), local('Proxima-Nova-Regular'),
+        url('ProximaNova-Regular.woff2') format('woff2'),
+        url('ProximaNova-Regular.woff') format('woff'),
+        url('ProximaNova-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+:root {
+    --light-blue: #018ABE;
+}
+
+body {
+    background-color: #162831;
+    width: 1299px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Menu and Heading */
+
+.header{
+    display: flex;
+    margin-top: 30px;
+}
+
+.main-menu{
+    margin-left: 164px;
+}
+
+.main-menu__list{
+    display: flex;
+    margin-top: 22px;
+}
+.main-menu__list-item{
+    margin-left: 50px;
+}
+
+.main-menu__list-item a {
+    color: white;
+    font-family: 'Proxima Nova';
+    font-size: 14px;
+}
+
+.main-menu__registration{
+    margin-left: 220px;
+}
+.main-menu__registration a {
+    background: var(--light-blue);
+    padding: 11px;
+    border-radius: 5px;
+}
+
+.heading{
+    background-image: url('assets/images/png/background.png');
+    height: 600px;
+    width: 1296px;
+    margin-top: 48px;
+    font-family: 'El Messiri';
+    color: white;
+    padding-top: 141px;
+}
+.heading__group{
+    text-align: center;
+}
+.heading__h4{
+    font-size: 24px;
+}
+
+.heading__h4::before{
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 14px;
+    border-radius: 0 20px ;
+    background-color: white;
+    margin-right: 70px;
+}
+
+.heading__h4::after{
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 14px;
+    border-radius: 20px 0px ;
+    background-color: white;
+    margin-left: 70px;
+}
+
+.heading__Aqua{
+    margin-top: 56px;
+    font-size: 64px;
+}
+.heading__RitmStyle{
+    font-size: 64px;
+    margin-top: 26px;
+}
+
+
+/*Session*/
+.session {
+    margin-top: 158px;
+}
+
+.session__heading{
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    font-family: 'El Messiri';
+    font-weight: bold;
+}
+.session__heading::after{
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 14px;
+    border-radius: 20px 0px ;
+    background-color: var(--light-blue);
+    margin-left: 42px;
+}
+.session__heading::before{
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 14px;
+    border-radius: 0 20px ;
+    background-color: var(--light-blue);
+    margin-right: 42px;
+}
+
+.session__menu {
+    margin-top: 109px;
+}
+
+.session__list {
+
+    display: grid;
+    grid-template-columns: 419px;
+    grid-template-rows: 258px 258px;
+    grid-gap: 24px;
+    grid-template-areas: 
+    "one two four"
+    "one three five"
+    ;
+}
+
+.session__list-item {
+    
+}
+
+.session__list-item a {
+    color: white;
+    font-weight: 700;
+    font-family: 'El Messiri';
+    font-size: 24px;
+    background: url('assets/images/png/diving.png');
+    display: inline-block;
+    width: 416px;
+}
+
+.one-grid{
+    grid-area: one;
+}
+    .one-grid a {
+        height: 540px;
+        background: url('assets/images/png/diving2.png');
+        border-bottom: 10px var(--light-blue) solid;
+        border-radius: 5px;
+        padding-top: 460px;
+        padding-left: 50px;
+    }
+
+.two-grid a, .three-grid a, .four-grid a, .five-grid a{
+    height: 258px;
+}
+
+.two-grid a, .three-grid a {
+    padding-top: 199px;
+    padding-left: 40px;
+}
+
+.four-grid a{
+    padding-top: 157px;
+    padding-left: 40px;
+    line-height: 35px;
+}
+
+.five-grid a {
+    line-height: 35px;
+    padding-top: 157px;
+    padding-left: 40px;
+}
+
+/*Id grids*/
+.two-grid{
+    grid-area: two;
+}
+
+.three-grid{
+    grid-area: three;
+}
+
+.four-grid{
+    grid-area: four;
+}
+
+.five-grid{
+    grid-area: five;
+}
+
+
+/*Review*/
+
+.review{
+    margin-top: 155px;
+    height: 700px
+}
+.review__heading{
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    font-family: 'El Messiri';
+    font-weight: bold;
+}
+.review__heading::after{
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 14px;
+    border-radius: 20px 0px ;
+    background-color: var(--light-blue);
+    margin-left: 42px;
+}
+.review__heading::before{
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 14px;
+    border-radius: 0 20px ;
+    background-color: var(--light-blue);
+    margin-right: 42px;
+}
+
+.review__list{
+    height: 650px;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 3fr;
+    gap: 20px 20px;
+}
+
+.review__comment {
+    background: var(--light-blue);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.review__list p {
+    font-family: 'Proxima Nova';
+}
+
+.review__list h3 {
+    font-family: 'El Messiri';
+    font-size: 30px;
+}
+
+/*About RitmStyle*/
+.about-ritmstyle{
+    margin-top: 38px;
+}
+
+.about-ritmstyle__heading{
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    font-family: 'El Messiri';
+    font-weight: bold;
+}
+
+.about-ritmstyle__heading::after{
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 14px;
+    border-radius: 20px 0px ;
+    background-color: var(--light-blue);
+    margin-left: 42px;
+}
+.about-ritmstyle__heading::before{
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 14px;
+    border-radius: 0 20px ;
+    background-color: var(--light-blue);
+    margin-right: 42px;
+}
+
+.session-cost__heading{
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    font-family: 'El Messiri';
+    font-weight: bold;
+}
+
+.session-cost__heading::after{
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 14px;
+    border-radius: 20px 0px ;
+    background-color: var(--light-blue);
+    margin-left: 42px;
+}
+.session-cost__heading::before{
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 14px;
+    border-radius: 0 20px ;
+    background-color: var(--light-blue);
+    margin-right: 42px;
+}
+
+.about-ritmstyle__massage{
+    margin-top: 177px;
+    margin-left: 111px;
+}
+.about-ritmstyle__massage-block{
+}
+
+.about-ritmstyle__massage-block img{
+    display: block;
+    width: 526px;
+    position: absolute;
+    margin-left: 550px;
+    margin-top: -300px;
+}
+
+.about-ritmstyle__massage-heading{
+    font-size: 24px;
+    font-family: 'Proxima Nova';
+    font-weight: 700;
+    color: white;
+}
+.about-ritmstyle__massage-p{
+    font-size: 16px;
+    font-family: 'Proxima Nova';
+    font-weight: 300;
+    color: white;
+    width: 466px;
+    line-height: 22.4px;
+    margin-top: 37px;
+}
+
+.about-ritmstyle__massage-paragraph2{
+    margin-top: 14px;
+}
+.about-ritmstyle__hydrotherapy{
+    margin-left: 111px;
+}
+
+.about-ritmstyle__hydrotherapy img {
+    display: block;
+    width: 526px;
+    position: absolute;
+}
+
+.about-ritmstyle__hydrotherapy-block{
+}
+.about-ritmstyle__hydrotherapy-heading{
+    font-size: 24px;
+    font-family: 'Proxima Nova';
+    font-weight: 700;
+    color: white;
+    margin-left: 610px;
+    margin-top: 185px;
+}
+.about-ritmstyle__hydrotherapy-p{
+    font-size: 16px;
+    font-family: 'Proxima Nova';
+    font-weight: 300;
+    color: white;
+    width: 466px;
+    margin-left: 610px;
+    margin-top: 35px;
+    line-height: 22.4px;
+}
+.about-ritmstyle__hydrotherapy-paragraph1{
+
+}
+.about-ritmstyle__hydrotherapy-paragraph2{
+    margin-top: 15px;
+}
+
+
+/*Cost-Session*/
+.session-cost{
+margin-top: 150px;
+height: 700px;
+}
+
+.session-cost__heading{
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    font-family: 'El Messiri';
+    font-weight: bold;
+}
+
+.session-cost__heading::after{
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 14px;
+    border-radius: 20px 0px ;
+    background-color: var(--light-blue);
+    margin-left: 42px;
+}
+.session-cost__heading::before{
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 14px;
+    border-radius: 0 20px ;
+    background-color: var(--light-blue);
+    margin-right: 42px;
+}
+
+.session-cost__block{
+    display: flex;
+    margin-top: 185px;
+    margin-left: 114px;
+}
+
+.session-cost__block img {
+    position: absolute;
+    margin-left: 550px;
+    margin-top: -80px;
+}
+
+
+.session-cost__list{
+    display: flex;
+}
+.session-cost__list-cost{
+}
+
+.session-cost__list-item{
+    font-family: 'Proxima Nova';
+    color: white;
+    font-size: 18px;
+    margin-top: 31px;
+}
+
+
+.session-cost__list-item::before{
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 9px;
+    border-radius: 0 8px ;
+    background-color: var(--light-blue);
+    margin-right: 17px;
+}
+
+.cost-list {
+    font-family: 'El Messiri';
+    color:white;
+    font-size: 18px;
+    margin-left: 110px;
+}
+
+.cost-list p {
+    margin-top: 31px;
+}
+
+.session-cost__description {
+    font-family: 'El Messiri';
+    font-weight: bold;
+    color: white;
+    font-size: 21px;
+    margin-top: 352px;
+    margin-left: 270px;
+}
+
+
+/*Footer*/
+
+.footer{
+margin-top: 54px;
+display: flex;
+}
+.map iframe{
+    border-radius: 10px;
+}
+.address{
+margin-left: 49px;
+}
+
+.block-address {
+    width: 392px;
+    height: 290px;
+    background: var(--light-blue);
+    padding-top: 1px;
+    border-radius: 10px;
+}
+
+.heading-address {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'El Messiri';
+    color: white;
+    margin-top: 41px;
+    margin-left: 43px;
+}
+
+.address-list {
+    font-size: 14px;
+    color: white;
+    font-family: 'Proxima Nova';
+    margin-top: 2px;
+    margin-left: 45px;
+    display: flex;
+}
+
+.address-list address {
+    margin-top: 24px;
+}
+
+.addresses {
+    margin-top: 3px;
+    margin-left: 20px;
+}
+
+
+.icons_address img {
+    display: block;
+    margin-top: 23.5px;
+}
+
+.address_registration {
+    padding: 11px 15px;
+    background: white;
+    color: var(--light-blue);
+    border-radius: 3px;
+    font-size: 13px;
+    font-family: 'Proxima Nova';
+    display: block;
+    width: 155px;
+    margin-top: 28px;
+    margin-left: 43px;
+}
+
+
+
+.address_registration{
+
+}
+.address_second{
+    margin-top: 24px;
+}
+
+
+
+/*Copyright*/
+.copyright{
+    display: flex;
+    margin-top: 90px;
+    color: white;
+    font-size: 14px;
+    font-family: 'Proxima Nova';
+    padding-bottom: 50px;
+}
+
+.copyright__second {
+    margin-left: 1040px;
+}
+
+
+
+
